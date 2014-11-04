@@ -630,7 +630,7 @@ void NativeWindowCocoa::SetResizable(bool resizable) {
 }
 
 void NativeWindowCocoa::SetAlwaysOnTop(bool top) {
-  [window() setLevel:(top ? NSFloatingWindowLevel : NSNormalWindowLevel)];
+  [window() setLevel:(top ? NSScreenSaverWindowLevel : NSNormalWindowLevel)];
 }
 
 void NativeWindowCocoa::SetShowInTaskbar(bool show) {
